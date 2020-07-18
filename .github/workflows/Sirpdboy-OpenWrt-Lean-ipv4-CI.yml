@@ -3,7 +3,7 @@
 # Author: sirpdboy
 # https://github.com/sirpdboy/Openwrt
 
-name: Sirpdboy-OpenWrt-Lean-ipv4-mini-CI
+name: GodGong-OpenWrt-Lean-ipv4-mini-CI
 on:
   push:
     branches: 
@@ -51,7 +51,7 @@ jobs:
        run: |
         cd openwrt
         # 修改LAN的IP地址
-        # sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
+        # sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
         rm -f ./.config*
         touch ./.config
         #
